@@ -45,8 +45,8 @@ function renderCards(data) {
             <p style="font-size:1.1rem; font-weight:600">${word.meaning}</p>
             <div style="margin-top:1rem; padding-top:1rem; border-top:1px solid #eee; display:flex; justify-content:space-between; align-items:center">
                 <button class="audio-btn" onclick="${word.audio ? `new Audio('${word.audio}').play()` : `speakWord('${word.latin}')`}">
-    ${word.audio ? '▶ Play Recording' : '🔊 Auto-Pronounce'}
-</button>
+                    ${word.audio ? '▶ Play Recording' : '🔊 Auto-Pronounce'}
+                </button>
                 <small style="color:#94a3b8">${word.dialect}</small>
             </div>
         </div>
